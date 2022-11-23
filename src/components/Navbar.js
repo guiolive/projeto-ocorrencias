@@ -5,10 +5,7 @@ function Navbar() {
   return (
     <nav className="Navbar">
       <ul>
-        {/* <Link to="/"> Home </Link> */}
-        {/* <Link to="/about"> About </Link> */}
-        {/* <Link to="/projects"> Projects </Link> */}
-        
+     
         {/*    NAV LINK SUBSTITUIU O LINK POIS ELE PODE SE
         DENOMIAR COMO ATIVO   */}
         <NavLink to="/" className={({ isActive }) => isActive ? "selected" : ""}>
@@ -19,14 +16,14 @@ function Navbar() {
           to="/about" 
           className={({ isActive }) => isActive ? "selected" : ""}
          >
-          About
+          Sobre
         </NavLink>
         
         <NavLink 
           to="/projects" 
           className={({ isActive }) => isActive ? "selected" : ""}
         >
-          Projects
+          Ocorrências
         </NavLink>
         
       </ul>

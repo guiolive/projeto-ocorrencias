@@ -18,7 +18,7 @@ function ProjectsPage (props) {                     // <== UPDATE
   
   return (
     <div>
-      <h1>Projects</h1>
+      <h1>Ocorrencias</h1>
       {projects.map((project) => {
         return (
           <div key={project._id} className="project">

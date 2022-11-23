@@ -4,10 +4,10 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ErrorPage from './pages/ErrorPage';
-import HomePageWithNavigate from './pages/HomePageWithNavigate';
-import projectsData from './projects-data.json';
 
 import { Routes, Route } from 'react-router-dom'; // <== IMPORT
+import CardConteiner from './components/CardConteiner';
+import OcorrenciaDetalhe from './pages/OcorrenciaDetalhe';
 
 
 function App() {
@@ -18,15 +18,13 @@ function App() {
       {/*   Add <Route /> components between <Routes> and </Routes>   */} 
       <Routes>
         {/* <Route path="/" element={<HomePage />} /> */}
-        <Route path="/" element={<HomePageWithNavigate />} />
+        <Route path="/" element={<HomePage/>} />
+
         <Route path="/about" element={<AboutPage />} />
 
+        <Route path="/ocorrenciaDetalhe/:id" element={<OcorrenciaDetalhe />} />
 
-        <Route
-         path="/projects" 
-         element={<ProjectsPage projects={projectsData} />} 
 
-        />
 
         <Route path="*" element={<ErrorPage />} /> {/* <== 404 PAGE */}
       </Routes>
