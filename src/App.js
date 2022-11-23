@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ErrorPage from './pages/ErrorPage';
 import HomePageWithNavigate from './pages/HomePageWithNavigate';
+import projectsData from './projects-data.json';
 
 import { Routes, Route } from 'react-router-dom'; // <== IMPORT
 
@@ -19,7 +20,13 @@ function App() {
         {/* <Route path="/" element={<HomePage />} /> */}
         <Route path="/" element={<HomePageWithNavigate />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
+
+
+        <Route
+         path="/projects" 
+         element={<ProjectsPage projects={projectsData} />} 
+
+        />
 
         <Route path="*" element={<ErrorPage />} /> {/* <== 404 PAGE */}
       </Routes>

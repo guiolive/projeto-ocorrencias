@@ -9,7 +9,8 @@ function Navbar() {
         {/* <Link to="/about"> About </Link> */}
         {/* <Link to="/projects"> Projects </Link> */}
         
-        {/*    ADD    */}
+        {/*    NAV LINK SUBSTITUIU O LINK POIS ELE PODE SE
+        DENOMIAR COMO ATIVO   */}
         <NavLink to="/" className={({ isActive }) => isActive ? "selected" : ""}>
           Home
         </NavLink>
