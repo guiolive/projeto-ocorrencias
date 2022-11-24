@@ -19,12 +19,12 @@ function Navbar() {
           Sobre
         </NavLink>
         
-        <NavLink 
+        {/* <NavLink 
           to="/projects" 
           className={({ isActive }) => isActive ? "selected" : ""}
         >
           Ocorrências
-        </NavLink>
+        </NavLink> */}
         
       </ul>
       

@@ -22,10 +22,14 @@ function OcorrenciaDetalhe(){
 },[])
 
     return (
-        <>
+        <div className="ocorrencia" >
+      <h4>Número da Ocorrência: {ocorrencias.numeroOcorrencia}</h4>
+      <p>Data da Ocorrência: {ocorrencias.data}</p>
+      <p>Categoria: </p>
+      <p>Descrição: {ocorrencias.descricao}</p>
+      <p>Vigilante: {ocorrencias.nome}</p>
 
-
-        </>
+        </div>
     )
 }
 

@@ -24,9 +24,12 @@ function App() {
 
         <Route path="/ocorrenciaDetalhe/:id" element={<OcorrenciaDetalhe />} />
 
+        
+
 
 
         <Route path="*" element={<ErrorPage />} /> {/* <== 404 PAGE */}
+        
       </Routes>
       
     </div>
