@@ -22,23 +22,23 @@ function CardConteiner() {
 
   } getOcorrencias();
 },[])
-
+    
 
   return (
     <>
     {
       loading&& (ocorrencias.map((element) => {
         return (
-          <Card style={{ width: 'rem' }}>
+          <Card key={element._id} style={{ width: 'rem' }}>
       
       <Card.Body className='cards' >
-        <Card.Title>Número Ocorrência: {element.numeroOcorrencia}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Vigilante: {element.nome}</Card.Subtitle>
+        <Card.Title>ID: {element._id}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Vigilante: {element.name}</Card.Subtitle>
         <Card.Text>Status Ocorrência: {element.status}</Card.Text>
-        <Card.Text>Contato: {element.email}</Card.Text>
+        
         
         <Link to={`/ocorrenciaDetalhe/${element._id}`}>
-        <Card.Link className='detalhes'>Detalhes </Card.Link>
+        <Card.Text className='detalhes'>Detalhes </Card.Text>
         </Link>
       
       </Card.Body>
